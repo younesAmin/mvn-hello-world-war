@@ -10,7 +10,7 @@ node {
     stage('Maven pachage'){
         sh 'mvn dependency::tree'
         sh 'echo %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%'
-        sh 'mvn package'
+        sh 'mvn package -o'
     }
     
     def img = stage('Build'){
