@@ -4,7 +4,7 @@ node {
     def IMAGE="${registryProject}:v-${env.BUILD_ID}"
     
     stage('Clone'){
-        git branch: 'main', url: 'https://github.com/younesAmin/mvn-hello-world'
+        git branch: 'main', url: 'https://github.com/younesAmin/mvn-hello-world-war.git'
     }
     
     stage('Maven pachage'){
